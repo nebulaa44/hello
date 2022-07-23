@@ -11,5 +11,9 @@ fn main() {
         adw::init();
     });
 
-    window::main_window(app);
+    app.connect_activate(|app| {
+        window::main_window(app);
+    });
+
+    window::main_window(&app);
 }
