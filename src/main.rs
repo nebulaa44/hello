@@ -15,5 +15,5 @@ fn main() {
         window::main_window(app);
     });
 
-    window::main_window(&app);
+    app.run();
 }

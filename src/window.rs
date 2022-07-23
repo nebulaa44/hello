@@ -1,7 +1,6 @@
 use adw::prelude::*;
 
 pub fn main_window(app: &gtk::Application) {
-
   let text = gtk::Label::builder()
     .label("Hello world!")
     .margin_top(32)
@@ -21,7 +20,4 @@ pub fn main_window(app: &gtk::Application) {
     .build();
     
   window.show();
-
-  app.run();
-  
 }
