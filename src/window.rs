@@ -1,6 +1,7 @@
 use adw::prelude::*;
 
 pub fn main_window(app: &gtk::Application) {
+  // ! The label is not centered after resizing the window
   let text = gtk::Label::builder()
     .label("Hello world!")
     .margin_top(32)
@@ -15,7 +16,6 @@ pub fn main_window(app: &gtk::Application) {
   let window = adw::ApplicationWindow::builder()
     .application(app)
     .title("Hello")
-    .resizable(false)
     .content(&content)
     .build();
     
